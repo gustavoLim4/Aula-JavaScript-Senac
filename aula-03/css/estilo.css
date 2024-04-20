@@ -1,4 +1,4 @@
-body  {
+/* body  {
     background-color: black;
 }
 
@@ -16,4 +16,36 @@ body h1{
     0 0 70px #07a8ff,
     0 0 80px #07a8ff,
     0 0 100px #07a8ff;
+} */
+
+body  {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    color: #fff ;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #ffffff,
+    0 0 70px #ffffff,
+    0 0 80px #ffffff,
+    0 0 100px #ffffff;
+    font-size: 1.9em;  
+}
+
+.mini {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    border-radius: 20px
+}
+.mini img {
+    width: 10%;
+    border-radius: 10px;
 }
