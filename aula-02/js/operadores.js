@@ -9,4 +9,6 @@ subtrair = numero1 - numero2
 multplicar = numero1 * numero2
 dividir = numero1 / numero2
 resto = numero1 % numero2
-document.getElementsByTagName("div")[0].innerHTML = soma + "<br>" +multplicar+ "<br>" +dividir+ "<br>" +resto ;
+document.getElementsByTagName("div")[0].innerHTML = (soma + "<br>" +multplicar+ "<br>" +dividir+ "<br>" +resto) 
+
+//                                                              INDEX 4
