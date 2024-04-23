@@ -3,18 +3,9 @@
 function resultado () {
     
 
-    var nota = document.getElementsByTagName("input")[0].value
+    var nome = document.getElementsByTagName("input")[0].value
+    var idade = document.getElementsByTagName("input")[1].value
 
-    var resultado = "Aprovado"
-
-    if (nota >= 7) {
-        resultado
-    }
-    else if (nota <= 4){
-        resultado = "Reprovado"
-    }
-    else {
-        resultado = "Recuperção"
-    }
-    document.getElementsByTagName("label")[1].innerHTML = resultado
+    
+    document.getElementsByTagName("label")[2].innerHTML = `Olá ${nome} sua idade é ${idade} anos`
 }

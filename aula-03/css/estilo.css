@@ -38,14 +38,14 @@ body  {
     font-size: 1.9em;  
 }
 
-.mini {
+.fotoNav {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(236, 236, 236);
     padding: 20px;
     border-radius: 20px
 }
-.mini img {
+.fotoNav img {
     width: 10%;
     border-radius: 10px;
 }
