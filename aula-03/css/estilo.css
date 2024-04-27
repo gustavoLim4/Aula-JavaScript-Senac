@@ -39,7 +39,7 @@ body  {
     font-family: "arial";
 }
 
-.fotoNav {
+#fotoNav {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(236, 236, 236);
@@ -47,19 +47,19 @@ body  {
     border-radius: 20px;
     margin-bottom: 40px;
 }
-.fotoNav img {
+#fotoNav img {
     width: 10%;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.fotoNav img:hover {
+#fotoNav img:hover {
     transform: translateY(-3px);
     transition: .3s ;
     box-shadow: 0 0 0  5px #c7c7c7
 }
 
-.full {
+#full {
     width: 40vw;
     height: 70vh;
     padding: 10px;
@@ -68,7 +68,7 @@ body  {
  
 }
 
-.full img {
+#full img {
     border-radius: 20px;
     width: 100%;    
     box-shadow: 0 0 10px #fff,
