@@ -22,7 +22,7 @@ body  {
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 .galeria {
     display: flex;
@@ -36,6 +36,7 @@ body  {
     0 0 80px #ffffff,
     0 0 100px #ffffff;
     font-size: 1.9em;  
+    font-family: "arial";
 }
 
 .fotoNav {
@@ -43,9 +44,39 @@ body  {
     justify-content: space-evenly;
     background-color: rgb(236, 236, 236);
     padding: 20px;
-    border-radius: 20px
+    border-radius: 20px;
+    margin-bottom: 40px;
 }
 .fotoNav img {
     width: 10%;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.fotoNav img:hover {
+    transform: translateY(-3px);
+    transition: .3s ;
+    box-shadow: 0 0 0  5px #c7c7c7
+}
+
+.full {
+    width: 40vw;
+    height: 70vh;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+ 
+}
+
+.full img {
+    border-radius: 20px;
+    width: 100%;    
+    box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #ffffff,
+    0 0 70px #ffffff,
+    0 0 80px #ffffff,
+    0 0 100px #ffffff;
+}
+
