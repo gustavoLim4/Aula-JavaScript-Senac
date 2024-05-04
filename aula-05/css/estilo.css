@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#paleta {
+    width: 100vw;
+    height: 30vh;
+    border-bottom: 1px outset black;
+}
+#painel {
+    width: 100vw;
+    height: 70vh;
+}
+td {
+    width: 30px;
+    height: 21px;
+    padding: 1px;
+}
