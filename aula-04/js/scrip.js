@@ -14,7 +14,7 @@ function esquerda () {
 
 
 function direita () {
-    if (trocasIMG <= 5 ) {
+    if (trocasIMG >= 5  ) {
         trocasIMG = 5
     }
     else{
