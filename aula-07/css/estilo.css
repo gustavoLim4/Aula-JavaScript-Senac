@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.divAzul {
+    width: 200px;
+    height: 200px;
+    border: 7px outset rgba(0, 204, 255, 0.712);
+    background-color: blue;
+}
+
+.divAzul:hover {
+    transform: scale(1.9);
+    transition: .9s;
+    border-radius: 120px;
+    transform: translateY(-55px);
+}
+
+label {
+    font-size: 1.9em;
+    font-family: Helvetica;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+}
+
+#fotos {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#fotos img {
+    width: 28%;
+    margin: 10px;
+}
+
+#shadow {
+    width: 98.5vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+#shadow img {
+    width: 50%;
+
+}
+
+#close {
+    font-size: 2.9em;
+    text-decoration: none;
+    color: aliceblue;
+    height: 80%;
+    margin-left: 30px;
+}
