@@ -24,6 +24,7 @@ function array3() {
     }
     console.log(maior)
 }
+
 function array4() {
 
     let n1 = [1, 6, 17, 2, 0]
