@@ -19,29 +19,35 @@ function listar() {
 
   //fazer referencia a div chamada listarlivros para monstra os livros da api
 
-  const listar_livros = document.querySelector("#listarlivros")
+  const listar_livros = document.querySelector("#listarlivros");
 
-  fetch("http://10.26.44.14:5000/api/v1/livros/listar") 
-  .then((res) => res.json())
-  .then((dados) => {
-    dados.payload.map((livroItem) => {
+  fetch("http://10.26.44.14:5000/api/v1/livros/listar")
+    .then((res) => res.json())
+    .then((dados) => {
+      dados.payload.map((livroItem) => {
+        let caixa = document.createElement("div");
+        caixa.setAttribute("class", "caixa");
 
-        let caixa = document.createElement("div")
-        caixa.setAttribute("class" ,"caixa")
+        let capa = document.createElement("img");
+        capa.src = livroItem.foto1;
 
-        let capa = document.createElement("img")
-        capa.src=livroItem.foto1
+        let titulo = document.createElement("h4");
+        titulo.innerHTML = livroItem.titulo;
 
-        let titulo = document.createElement("h4")
-        titulo.innerHTML = livroItem.titulo
+        let autor = document.createElement("h5");
+        autor.innerHTML = livroItem.autor;
 
-        let autor = document.createElement("h5")
-        autor.innerHTML = livroItem.autor
+        let preco = document.createElement("p");
+        preco.setAttribute("class", "preco");
+        preco.innerHTML = livroItem.precoatual;
 
-        let preco = document.createElement("p")
-        preco.setAttribute("class" , "preco")
-        preco.innerHTML = livroItem.precoatual
+        caixa.appendChild(capa);
+        caixa.appendChild(titulo);
+        caixa.appendChild(autor);
+        caixa.appendChild(preco);
+
+        listar_livros.innerHTML += caixa;
+      });
     })
-  })
-  .catch
+    .catch((erro) => console.log(`Erro ao carregador os dados ${erro}`));
 }
