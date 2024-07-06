@@ -21,6 +21,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?language=pt-br&page=1&api_key=
     dados.results.map((filme)=>{
         let cartaz = document.createElement("div");
         cartaz.setAttribute("class","cartaz");
+        
         let poster = document.createElement("img");
         poster.src=img+filme.poster_path;
        

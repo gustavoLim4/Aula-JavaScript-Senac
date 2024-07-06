@@ -14,14 +14,16 @@
       <nav>
         <ul>
           <li><a href="#" id="home">home</a></li>
-          <li><a href="#" id="cadastrar">cadastrar</a></li>
+          <li>
+            <a href="#" id="cadastrar" onclick="abrirOcadastro()">cadastrar</a>
+          </li>
           <li>
             <form>
               <input
                 type="search"
                 id="buscar"
                 placeholder="buscar livro"
-              /><button>buscar</button>
+              /><button onclick="resultado()">buscar</button>
             </form>
           </li>
         </ul>
@@ -33,8 +35,32 @@
       <div id="listarlivros"></div>
     </section>
 
-    <section id="resultado"></section>
-    <section id="inserir"></section>
+    <section id="resultado">
+      <div class="resultadoBSC"></div>
+    </section>
+    <section id="inserir">
+      <h3>cadastrar livros</h3>
+      <form onsubmit="return false">
+        <input type="text" id="txtTitulo" placeholder="Tituto do livro" />
+        <input type="text" id="txtAuto" placeholder="Autor" />
+        <input type="text" id="txtPreco" placeholder="Preço" />
+        <input type="text" id="txtFoto1" placeholder="Foto do livro" />
+        <input type="text" id="txtFoto2" placeholder="Foto do livro" />
+        <select id="txtGenero">
+          <option value="Selecione">Selecione</option>
+          <option value="Romance">Romance</option>
+          <option value="Religião">Religião</option>
+          <option value="Autoajuda">Autoajuda</option>
+          <option value="Drama">Drama</option>
+          <option value="Biografia">Biografia</option>
+        </select>
+        <textarea
+          id="txtsinopse"
+          placeholder="Escreva a sinopse aqui "
+        ></textarea>
+        <button onclick="inserir()">Cadastrar</button>
+      </form>
+    </section>
 
     <script src="js/script.js"></script>
   </body>

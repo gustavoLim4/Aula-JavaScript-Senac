@@ -78,10 +78,141 @@ button {
 }
 
 #listar,
-#resultado,
-#inserir {
+#resultado {
     width: 80vw;
-    height: 100vh;
-    border: 1px solid silver;
+    height: 120vh;
+    border: 3px outset rgb(197, 197, 197);
     margin: 80px auto;
 }
+#inserir {
+    width: 80vw;
+    height: 95vh;
+    border: 3px outset rgb(197, 197, 197);
+    margin: 80px auto;
+    
+}
+
+#listarlivros {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caixa {
+    width: 30%;
+    margin: 10%;
+}
+
+.caixa img {
+    width: 100%;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4em;
+    text-align: justify;
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.9em;
+    text-align: justify;
+    margin-top: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #2b2b2b5e;
+    filter: blur(.5px);
+    letter-spacing: 0.30rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h5 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(90deg, #8b39ff, #0078f8, #00ff15, #ff0000, #ffee00);
+    background-size: 400% 100%;
+    animation: degrade 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+
+#inserir form {
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+
+}
+
+
+#inserir input[type="text"], 
+#inserir select{
+    width: 95%;
+    padding: 10px;
+    border: 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+    font-size: 12pt;
+    outline: none;
+    color: rgb(94, 94, 94);
+
+}
+select {
+    margin-bottom: 40px !important;
+}
+
+#txtPreco {
+    width: 30% !important;
+}
+
+#txtsinopse {
+    width: 95%;
+    height: 140px;
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+#inserir button {
+    position: relative;
+    left: 35%;
+    padding: 15px ;
+    border-radius: 10px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto;
+    color: chocolate;
+    letter-spacing: 0.25rem;
+    font-size: 1.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
