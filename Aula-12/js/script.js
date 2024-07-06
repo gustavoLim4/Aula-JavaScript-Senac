@@ -46,7 +46,7 @@ function listar() {
         caixa.appendChild(autor);
         caixa.appendChild(preco);
 
-        listar_livros.innerHTML += caixa;
+        listar_livros.appendChild(caixa);
       });
     })
     .catch((erro) => console.log(`Erro ao carregador os dados ${erro}`));
